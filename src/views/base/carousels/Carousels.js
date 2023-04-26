@@ -9,7 +9,7 @@ import {
   CCol,
   CRow,
 } from '@coreui/react'
-import { DocsExample } from 'src/components'
+import { DocsExample } from '../../../components'
 
 import AngularImg from '../../../assets/images/angular.jpg'
 import ReactImg from '../../../assets/images/react.jpg'
