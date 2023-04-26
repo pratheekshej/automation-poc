@@ -1,17 +1,13 @@
 {
   "name": "automation-poc",
   "version": "4.5.0",
-  "description": "CoreUI Free React Admin Template",
+  "description": "Dashboard Template for automation POC",
   "homepage": "https://pratheekshej.github.io/automation-poc",
   "bugs": {
     "url": "https://github.com/coreui/coreui-free-react-admin-template/issues"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:coreui/coreui-free-react-admin-template.git"
-  },
   "license": "MIT",
-  "author": "The CoreUI Team (https://github.com/orgs/coreui/people)",
+  "author": "PEJ",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
