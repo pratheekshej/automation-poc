@@ -1,0 +1,81 @@
+// Here you can add other styles
+a {
+    text-decoration: none;
+    color: rgba(var(--cui-info-rgb), var(--cui-bg-opacity));
+}
+
+.su-card {
+    background-color: #3399ff !important;
+}
+
+.new-btn {
+    background-color: #3399ff !important;
+
+    &:hover {
+        background-color: #2060a0 !important;
+    }
+}
+
+.new-link {
+    color: #3399ff;
+    text-decoration: none;
+}
+
+.lock-account {
+    cursor: pointer;
+}
+
+.sidebar-brand {
+    flex-direction: row;
+    justify-content: center;
+
+    &-full {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .logo-wp {
+            width: 30px !important;
+            height: 28px !important;
+        }
+
+        label {
+            margin-left: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+
+    &-narrow {
+        .logo-wp {
+            width: 50px !important;
+            height: 28px !important;
+        }
+    }
+}
+
+.breadcrumb-item {
+    a {
+        font-weight: 600;
+    }
+}
+
+.login-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 12px;
+
+    .nav-link {
+        color: #3399ff;
+    }
+}
+
+/* .table-responsive {
+    th,
+    td {
+        width: 30%;
+    }
+} */
