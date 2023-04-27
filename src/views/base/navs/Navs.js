@@ -13,7 +13,7 @@ import {
   CNavItem,
   CNavLink,
 } from '@coreui/react'
-import { DocsExample } from '../../../components'
+import { DocsExample } from 'src/components'
 
 const Navs = () => {
   return (

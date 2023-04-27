@@ -10,7 +10,7 @@ import {
   CAccordionHeader,
   CAccordionItem,
 } from '@coreui/react'
-import { DocsExample } from '../../../components'
+import { DocsExample } from 'src/components'
 
 const Accordion = () => {
   return (

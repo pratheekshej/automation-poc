@@ -15,7 +15,7 @@ import 'simplebar/dist/simplebar.min.css'
 
 // sidebar nav config
 import navigation from '../_nav'
-import { logoWP } from '../assets/brand/wp'
+import { logoWP } from 'src/assets/brand/wp'
 
 const AppSidebar = () => {
   const dispatch = useDispatch()
