@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import { cibCcAmex, cibCcApplePay, cibCcMastercard, cibCcPaypal, cibCcStripe, cibCcVisa, cibFacebook, cibGoogle, cibLinkedin, cibTwitter, cifBr, cifEs, cifFr, cifIn, cifPl, cifUs, cilUser, cilUserFemale } from "@coreui/icons"
 
 import avatar1 from 'src/assets/images/avatars/1.jpg'

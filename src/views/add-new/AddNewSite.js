@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import { cilLink } from '@coreui/icons';
 import CIcon from '@coreui/icons-react';
 import { CButton, CCard, CCardBody, CCardHeader, CCol, CForm, CFormInput, CInputGroup, CInputGroupText, CRow } from '@coreui/react';
