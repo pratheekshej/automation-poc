@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/automation-poc/static/css/main.c0be83ea.css",
-    "main.js": "/automation-poc/static/js/main.01c117ff.js",
+    "main.js": "/automation-poc/static/js/main.eb0b780d.js",
     "static/css/1014.1c7d44f3.chunk.css": "/automation-poc/static/css/1014.1c7d44f3.chunk.css",
     "static/js/1014.0c86addb.chunk.js": "/automation-poc/static/js/1014.0c86addb.chunk.js",
     "static/js/3024.d250349f.chunk.js": "/automation-poc/static/js/3024.d250349f.chunk.js",
@@ -65,7 +65,7 @@
     "static/media/6.jpg": "/automation-poc/static/media/6.edefb235566ed72a7429.jpg",
     "index.html": "/automation-poc/index.html",
     "main.c0be83ea.css.map": "/automation-poc/static/css/main.c0be83ea.css.map",
-    "main.01c117ff.js.map": "/automation-poc/static/js/main.01c117ff.js.map",
+    "main.eb0b780d.js.map": "/automation-poc/static/js/main.eb0b780d.js.map",
     "1014.1c7d44f3.chunk.css.map": "/automation-poc/static/css/1014.1c7d44f3.chunk.css.map",
     "1014.0c86addb.chunk.js.map": "/automation-poc/static/js/1014.0c86addb.chunk.js.map",
     "3024.d250349f.chunk.js.map": "/automation-poc/static/js/3024.d250349f.chunk.js.map",
@@ -121,6 +121,6 @@
   },
   "entrypoints": [
     "static/css/main.c0be83ea.css",
-    "static/js/main.01c117ff.js"
+    "static/js/main.eb0b780d.js"
   ]
 }
