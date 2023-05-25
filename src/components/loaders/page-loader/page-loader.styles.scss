@@ -1,0 +1,23 @@
+.loader-container {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    z-index: 8;
+
+    .loader {
+        img {
+            z-index: 6;
+        }
+    }
+
+    .loader-text {
+        margin-top: -50px;
+        color: #ffffff;
+        font-size: 18px;
+    }
+}

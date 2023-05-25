@@ -16,19 +16,25 @@ import 'simplebar/dist/simplebar.min.css'
 // sidebar nav config
 import navigation from '../_nav'
 import { logoWP } from 'src/assets/brand/wp'
+import { sideBarUnfoldable, sideBarVal } from 'src/redux/user/user.selectors'
+import { setSideBarVal } from 'src/redux/user/user.actions'
+import { loaderData } from 'src/redux/app/app.selectors'
 
 const AppSidebar = () => {
   const dispatch = useDispatch()
-  const unfoldable = useSelector((state) => state.sidebarUnfoldable)
-  const sidebarShow = useSelector((state) => state.sidebarShow)
+  const unfoldable = useSelector(sideBarUnfoldable)
+  const sidebarShow = useSelector(sideBarVal)
+  const loaderInfo = useSelector(loaderData)
+  const isLoading = loaderInfo.val;
 
   return (
     <CSidebar
       position="fixed"
+      className={`${isLoading ? ' is-loading' : ''}`}
       unfoldable={unfoldable}
       visible={sidebarShow}
       onVisibleChange={(visible) => {
-        dispatch({ type: 'set', sidebarShow: visible })
+        dispatch(setSideBarVal({ sidebarShow: visible }))
       }}
     >
       <CSidebarBrand className="d-none d-md-flex" to="/">
@@ -49,7 +55,7 @@ const AppSidebar = () => {
       </CSidebarNav>
       <CSidebarToggler
         className="d-none d-lg-flex"
-        onClick={() => dispatch({ type: 'set', sidebarUnfoldable: !unfoldable })}
+        onClick={() => dispatch(setSideBarVal({ sidebarUnfoldable: !unfoldable }))}
       />
     </CSidebar>
   )

@@ -2,6 +2,7 @@
 import React from 'react'
 import CIcon from '@coreui/icons-react'
 import {
+  cilApplications,
   cilAppsSettings,
   cilBell,
   cilCalculator,
@@ -14,31 +15,13 @@ import {
   cilPuzzle,
   cilSpeedometer,
   cilStar,
+  cilWifiSignal4,
 } from '@coreui/icons'
 import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
 
-const _nav = [
+// CORE UI COMPONENT ROUTES -----------------------------------------
+const coreUIRoutes = [
   {
-    component: CNavItem,
-    name: 'Dashboard',
-    to: '/dashboard',
-    icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
-    badge: {
-      color: 'info',
-      // text: 'NEW',
-    },
-  },
-  {
-    component: CNavTitle,
-    name: 'App Components',
-  },
-  {
-    component: CNavItem,
-    name: 'Add New',
-    to: '/spin',
-    icon: <CIcon icon={cilAppsSettings} customClassName="nav-icon" />,
-  },
-  /*{
     component: CNavItem,
     name: 'Colors',
     to: '/theme/colors',
@@ -307,7 +290,37 @@ const _nav = [
     name: 'Docs',
     href: 'https://coreui.io/react/docs/templates/installation/',
     icon: <CIcon icon={cilDescription} customClassName="nav-icon" />,
-  }, */
+  },
+]
+
+// APP SIDEBAR NAV LIST
+const _nav = [
+  {
+    component: CNavItem,
+    name: 'Dashboard',
+    to: '/dashboard',
+    icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
+    /* badge: {
+      color: 'info',
+      text: 'NEW',
+    } */
+  },
+  {
+    component: CNavTitle,
+    name: 'App Components',
+  },
+  {
+    component: CNavItem,
+    name: 'Deploy',
+    to: '/deploy',
+    icon: <CIcon icon={cilAppsSettings} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'SSH',
+    to: '/ssh',
+    icon: <CIcon icon={cilWifiSignal4} customClassName="nav-icon" />,
+  },
 ]
 
 export default _nav

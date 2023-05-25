@@ -17,17 +17,22 @@ import { cilBell, cilEnvelopeOpen, cilList, cilMenu } from '@coreui/icons'
 import { AppBreadcrumb } from './index'
 import { AppHeaderDropdown } from './header/index'
 import { logo } from 'src/assets/brand/logo'
+import { sideBarVal } from 'src/redux/user/user.selectors'
+import { setSideBarVal } from 'src/redux/user/user.actions'
+import { loaderData } from 'src/redux/app/app.selectors'
 
 const AppHeader = () => {
   const dispatch = useDispatch()
-  const sidebarShow = useSelector((state) => state.sidebarShow)
+  const sidebarShow = useSelector(sideBarVal)
+  const loaderInfo = useSelector(loaderData)
+  const isLoading = loaderInfo.val
 
   return (
-    <CHeader position="sticky" className="mb-4">
+    <CHeader position="sticky" className={`mb-4${isLoading ? ' is-loading' : ''}`}>
       <CContainer fluid>
         <CHeaderToggler
           className="ps-1"
-          onClick={() => dispatch({ type: 'set', sidebarShow: !sidebarShow })}
+          onClick={() => dispatch(setSideBarVal({ sidebarShow: !sidebarShow }))}
         >
           <CIcon icon={cilMenu} size="lg" />
         </CHeaderToggler>
@@ -43,8 +48,8 @@ const AppHeader = () => {
             </CNavLink>
           </CNavItem>
           <CNavItem>
-            <CNavLink to="/spin" component={NavLink}>
-              Add New
+            <CNavLink to="/deploy" component={NavLink}>
+              Deploy
             </CNavLink>
           </CNavItem>
           {/* <CNavItem>
@@ -70,7 +75,7 @@ const AppHeader = () => {
           </CNavItem>
         </CHeaderNav>
 
-        <CHeaderNav className="ms-3">
+        <CHeaderNav className="avatar">
           <AppHeaderDropdown />
         </CHeaderNav>
       </CContainer>

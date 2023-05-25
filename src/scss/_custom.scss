@@ -1,4 +1,27 @@
 // Here you can add other styles
+
+.overlay-container {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(14, 13, 13);
+    height: 100%;
+    width: 100%;
+    opacity: 0.75;
+    z-index: 4;
+
+    &.loading {
+        z-index: 6;
+    }
+}
+
+.is-loading {
+    z-index: 3 !important;
+}
+
 a {
     text-decoration: none;
     color: rgba(var(--cui-info-rgb), var(--cui-bg-opacity));
@@ -6,6 +29,25 @@ a {
 
 .su-card {
     background-color: #3399ff !important;
+
+    .text-center {
+        h2 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+
+            .login-wp {
+                width: 50px;
+                height: 50px;
+            }
+
+            label {
+                margin-left: 10px;
+            }
+        }
+    }
 }
 
 .new-btn {
@@ -73,6 +115,39 @@ a {
     }
 }
 
+.toast-header {
+    svg.rounded {
+        border-radius: 2px !important;
+    }
+}
+
+.bg-col {
+    background: linear-gradient(to right, #3399ff 15%, #2b2b2b 100%);
+}
+
+.container-lg {
+    max-width: unset !important;
+}
+
+.settings-body,
+.add-new-site-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .pwd-card {
+        width: 50%;
+    }
+}
+
+.avatar {
+    margin-left: 2px !important;
+}
+
+.routes {
+    cursor: pointer;
+}
 /* .table-responsive {
     th,
     td {

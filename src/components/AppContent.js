@@ -1,9 +1,10 @@
+/* eslint-disable no-unused-vars */
 import React, { Suspense } from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import { CContainer, CSpinner } from '@coreui/react'
 
 // routes config
-import routes from '../routes'
+import routes from 'src/core/app-routes/routes'
 
 const AppContent = () => {
   return (
@@ -23,6 +24,7 @@ const AppContent = () => {
               )
             )
           })}
+          <Route path="/" element={<Navigate to="dashboard" replace />} />
         </Routes>
       </Suspense>
     </CContainer>
